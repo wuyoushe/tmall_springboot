@@ -13,12 +13,12 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
-@Table(name="productimage")
+@Table(name="productImage")
 @JsonIgnoreProperties({"handler", "hibernateLazyInitializer"})
 public class ProductImage {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="id")
+    @Column(name = "id")
     private int id;
 
     @ManyToOne
